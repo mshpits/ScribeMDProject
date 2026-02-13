@@ -30,7 +30,7 @@ When looking for a specific API from an outside documentation or similar researc
 Overall, I used ChatGPT as an extremely fast documentation retrieval tool and guide for prompting LLMs through an API endpoint. It saved time searching online, but it did not completely replace it.
 
 ### Hugging Face Model: teapoitai/teapotllm
-Teapot is an open-source small language model that specialized in JSON extraction and reducing hallucinations by using context from documents to answer.
+Teapot is an open-source small language model that specializes in JSON extraction and reducing hallucinations by using context from documents to answer.
 I used teapotllm to receive the text transcript and return the JSON object with the desired fields. It did not however, return the object in the final required format.
 
 ## What To Improve On
