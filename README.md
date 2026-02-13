@@ -9,7 +9,7 @@ ScribeMD project for interview.
 5. Create .env file similar to .env.example and add your Hugging Face Access Key
 6. Open terminal and write prompt in the format: "npm start {YOUR TRANSCRIPT HERE}"
 
-### Problem Approach
+## Problem Approach
 I viewed this exercise as a wrapper for an LLM API endpoint that functions as a data pipeline.
 
 We have a text input that must pass through an LLM and be returned as a JSON object of required fields.
@@ -22,18 +22,18 @@ The steps I took in creating the project are as follows:
 4. Manipulate data the model returns to fit criteria of JSON object.
 5. Clean code, comment, refactor and organize project parts such as separating logic into different methods and organizing constants and imported modules (organization also occurred during production).
 
-### AI Tools Used
-1. ChatGPT
-2. ChatGPT helped organize the project into logical steps, specifically in how to call publicly available LLM models using Node.js as the backend service.
+## AI Tools Used
+### ChatGPT
+ChatGPT helped organize the project into logical steps, specifically in how to call publicly available LLM models using Node.js as the backend service.
 It provided fast testing feedback to iterate over the project code and find any easily identifiable errors that can be quickly fixed.
 When looking for a specific API from an outside documentation or similar research, I would at times prompt ChatGPT to point me in the right direction.
 Overall, I used ChatGPT as an extremely fast documentation retrieval tool and guide for prompting LLMs through an API endpoint. It saved time searching online, but it did not completely replace it.
 
-3. Hugging Face Model: teapoitai/teapotllm
+### Hugging Face Model: teapoitai/teapotllm
 Teapot is an open-source small language model that specialized in JSON extraction and reducing hallucinations by using context from documents to answer.
 I used teapotllm to receive the text transcript and return the JSON object with the desired fields. It did not however, return the object in the final required format.
 
-### What To Improve On
+## What To Improve On
 1. Fine-tune prompt to output consistently and accurately. The model does not always output the "urgency" field and often hallucinates information in fields missing info from the transcript.
 2. Modulize the prompt to consist of several variables/constants to allow for easier editing and iteration of the prompt.
 3. Create constants for various keywords that would trigger the LLM to assign a value of low, medium, or high urgency depending on the keywords found, rather than relying on the model's opinion in all cases.
