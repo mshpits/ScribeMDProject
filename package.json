@@ -1,0 +1,29 @@
+{
+  "name": "scribemdproject",
+  "version": "1.0.0",
+  "description": "AI-powered clinical phone assistant.",
+  "homepage": "https://github.com/mshpits/ScribeMDProject#readme",
+  "bugs": {
+    "url": "https://github.com/mshpits/ScribeMDProject/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mshpits/ScribeMDProject.git"
+  },
+  "license": "MIT",
+  "author": "Moshe Shpits",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx ts-node src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@types/node": "^25.2.3"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "^3.8.1",
+    "dotenv": "^17.2.4",
+    "openai": "^6.21.0"
+  }
+}
