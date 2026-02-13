@@ -40,4 +40,5 @@ I used teapotllm to receive the text transcript and return the JSON object with 
 4. Create responses to user depending on urgency level of their call such as advising them to call an ambulance or seek help if their call is flagged as "high" urgency.
 5. Create frontend to receive user's transcript and show filled-out form with the fields and info, asking the user if it is correct. If done over telephone, it would repeat the info using text-to-voice and ask user if it was all correct. (only if call is not flagged "high" urgency).
 6. Create MongoDB database to store the objects for future reference/usage.
+7. Create DTOs and assign stricter type safety measures to ensure consistency across method parameters and returns. 
 
